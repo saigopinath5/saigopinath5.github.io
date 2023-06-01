@@ -81,5 +81,11 @@ style="color:dodgerblue">Terms & Privacy</a><p>
 </div>
 </div>
 </form>
+   <script>
+      analytics.identify(' {{user.id}} ', {
+      name: '{{user.fullname}}',
+      email: '{{user.email}}'
+   });
+   </script>
 </body>
 </html>
