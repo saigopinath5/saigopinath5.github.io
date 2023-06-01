@@ -79,10 +79,12 @@ style="color:dodgerblue">Terms & Privacy</a><p>
 <button type="button" class="cancel">Cancel</button>
 <button type="submit" class="signup">Sign Up</button>
    <script>
-      analytics.identify(' anon user ', {
-      name: 'test',
-      email: 'test@test.com'
-   });
+      analytics.identify (user_id: "12345abcde",
+         traits: {
+         email: 'test@test.com',
+         name: 'Test User',
+         city: 'Test City',
+         internal: True });
    </script>
 </div>
 </div>
